@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!--Definindo a versão HTML 5-->
+
+<html lang="pt-br"> <!--Definindo o idioma para português do Brasil-->
+
+<head> <!--A cabeça da página-->
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/Projeto_01_Calculadora/css/estilo_calculadora.css">
+    <script src="/Projeto_01_Calculadora/javascript/script_calculadora.js" type="text/javascript"></script>
+</head>
+
+<body> <!--O corpo da página, onde tem todo o conteúdo-->
+
+    <div class="grid">
+        <!--Visor da calculadora-->
+        <div class="visor" id="tela"> </div>
+        <!--Dígitos da calculadora-->
+        <div class="botao-retangular" id="btn0" onclick="inserir('0')"> 0 </div>
+        <div class="botao" id="btn1" onclick="inserir('1')"> 1 </div>
+        <div class="botao" id="btn2" onclick="inserir('2')"> 2 </div>
+        <div class="botao" id="btn3" onclick="inserir('3')"> 3 </div>
+        <div class="botao" id="btn4" onclick="inserir('4')"> 4 </div>
+        <div class="botao" id="btn5" onclick="inserir('5')"> 5 </div>
+        <div class="botao" id="btn6" onclick="inserir('6')"> 6 </div>
+        <div class="botao" id="btn7" onclick="inserir('7')"> 7 </div>
+        <div class="botao" id="btn8" onclick="inserir('8')"> 8 </div>
+        <div class="botao" id="btn9" onclick="inserir('9')"> 9 </div>
+        <div class="botao" id="btn-virgula" onclick="inserir('.')"> , </div>
+        <!--Operações disponiveis-->
+        <div class="botao" id="btn-somar" onclick="inserir('+')"> + </div>
+        <div class="botao" id="btn-dividir" onclick="inserir('/')"> / </div>
+        <div class="botao" id="btn-multiplicar" onclick="inserir('*')"> * </div>
+        <div class="botao" id="btn-subtrair" onclick="inserir('-')"> - </div>
+        <div class="botao-retangular" id="btn-resultado" onclick="calcular()"> = </div>
+        <div class="botao-retangular" id="btn-resetar" onclick="limpar_visor()"> AC </div>
+    </div>
+
+</body>
+
+</html>
